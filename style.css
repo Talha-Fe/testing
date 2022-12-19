@@ -65,7 +65,7 @@ nav ul li a:hover{
 
 .container .row h2{
     font-size: 20px;
-    margin-left: 4%;
+    margin-left: 10%;
     margin-top: 1%;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover{
 .container .row h4, h5{
     font-size: 15px;
     color: rgba(255, 255, 255, 0.5);
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .container .row h6{
@@ -93,6 +93,7 @@ nav ul li a:hover{
     color: rgba(255, 255, 255, 0.884);
     font-size: 30px;
     margin-top: 1%;
+    margin-left: 10px;
 }
 
 .navbar .dc{
@@ -165,7 +166,7 @@ margin-left: 33%;
 
 .container .row h2{
 font-size: 20px;
-margin-left: -25px;
+margin-left: 45px;
 margin-top: 1%;
 }
 
@@ -266,7 +267,7 @@ font-family: 'Montserrat', sans-serif;
     
     .container .row h2{
     font-size: 20px;
-    margin-left: -25px;
+    margin-left: 45px;
     margin-top: 1%;
     }
     
