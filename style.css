@@ -1,308 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;500&family=Roboto+Mono:wght@300&family=Source+Serif+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@300;500&family=Roboto+Mono:wght@300&family=Slabo+27px&display=swap');
-
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    background: #131313;
+    overflow-x: hidden;
 }
 
-.navbar{
-        height: 12%;
+section {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-
+    min-height: 500px;
+    padding: 100px 20vw;
+    font-size: 20px;
 }
 
-.container{
-    height: 100vh;
+section .social-font {
+    font-family: 'Kanit', sans-serif;
+}
+
+.higlight-word-color {
+    color: #14131a;
+}
+
+section p {
+    font-family: 'Kanit', sans-serif;
+}
+
+section h1 {
+    margin-top: 200px;
+    font-size: 100px;
+}
+
+section h2 {
+    margin-top: 250px;
+}
+
+section h3 {
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+section h5 {
+    font-size: 30px;
+    margin-top: -80px;
+}
+
+.dark {
+    background: #131313;
+}
+
+.green {
+    background: #009473;
+}
+
+.wavetop {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("images/back.jpg");
+    overflow: hidden;
+    -height: 0;
+}
+
+.wavetop svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 265px;
+}
+
+.wavetop .shape-fill {
+    fill: #131313;
+}
+
+.spacer {
+    width: 100%;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    aspect-ratio: 900/600;
 }
 
-.container .navbar{
-    padding-left: 4%;
-    padding-right: 4%;
-    width: 100%;
-    height: 100px;
-    background: rgb(14, 14, 14);
+.layer1 {
+    background-image: url("layer1.svg");
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
-    column-gap: 70px;
-}
-
-nav ul li a{
-    color: rgb(197, 197, 197);
-    text-decoration: none;
-    transition: ease 0.5s;
-    font-size: 40px;
-    font-family: 'Oswald', sans-serif;
-}
-
-nav ul li a:hover{
-    color: rgb(88, 88, 88);
-
-}
-
-.navbar img{
-    width: 8rem;
-    margin-left: -65%;
-} 
-
-.container .row{
-    color: rgb(240, 240, 240);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    margin-top: 12%;
-    margin-left: 39%;
-}
-
-.container .row h2{
-    font-size: 20px;
-    margin-left: 10%;
-    margin-top: 1%;
-}
-
-.container .row h3{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-left: 7%;
-    margin-top: 1%;
-}
-
-.container .row h4, h5{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-left: 40px;
-}
-
-.container .row h6{
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 20px;
-    margin-top: 4%;
-    margin-left: 140px;
-}
-
-.container .row div{
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 30px;
-    margin-top: 1%;
-    margin-left: 10px;
-}
-
-.navbar .dc{
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 20px;
-    user-select: none;
-    margin-top: 3%;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/*tablet gorunumu */
-
-@media only screen and (max-width: 992px) {
+section .my-links {
+    display: inline-block;
+    font-size: 100px;
+    color: #fff
     
-.navbar{
-    height: 12%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
 }
 
-.container{
-height: 100vh;
-max-width: 80vh;
-background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("images/back.jpg");
-background-position: center;
-background-size: cover;
+section .my-links:hover {
+    color: #009473;
+    transition: 0.5s;
 }
 
-.container .navbar{
-padding-left: 0px;
-padding-right: 50px;
-width: 100%;
-height: 100px;
-background: rgb(14, 14, 14);
-}
-
-nav ul{
-list-style: none;
-display: flex;
-column-gap: 30px;
-}
-
-nav ul li a{
-color: rgb(197, 197, 197);
-text-decoration: none;
-transition: ease 0.5s;
-font-size: 40px;
-font-family: 'Oswald', sans-serif;
-}
-
-nav ul li a:hover{
-color: rgb(88, 88, 88);
-
-}
-
-.navbar img{
-width: 8rem;
-margin-left: 0%;
-} 
-
-.container .row{
-color: rgb(240, 240, 240);
-font-family: 'Montserrat', sans-serif;
-font-size: 40px;
-margin-top: 25%;
-margin-left: 33%;
-}
-
-.container .row h2{
-font-size: 20px;
-margin-left: 45px;
-margin-top: 1%;
-}
-
-.container .row h3{
-font-size: 15px;
-color: rgba(255, 255, 255, 0.5);
-margin-left: 3%;
-margin-top: 5%;
-}
-
-.container .row h4, h5{
-font-size: 15px;
-color: rgba(255, 255, 255, 0.5);
-margin-left: -25px;
-}
-
-.container .row h6{
-color: rgba(255, 255, 255, 0.884);
-font-size: 20px;
-margin-top: 15%;
-margin-left: 80px;
-}
-
-.container .row div{
-color: rgba(255, 255, 255, 0.884);
-font-size: 30px;
-margin-top: 5%;
-margin-left: -60px;
-}
-
-.navbar .dc{
-color: rgba(255, 255, 255, 0.884);
-font-size: 20px;
-user-select: none;
-margin-top: 3%;
-font-family: 'Montserrat', sans-serif;
-}
-}
-
-/*cep tel gorunumu */
-
-@media only screen and (max-width: 500px) {
-    .navbar{
-        height: 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    }
-    
-    .container{
-    height: 150vh;
-    max-width: 50vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("images/back.jpg");
-    background-position: center;
-    background-size: cover;
-    }
-    
-    .container .navbar{
-    padding-left: 0px;
-    padding-right: 190px;
-    width: 100%;
-    height: 100px;
-    background: rgb(14, 14, 14);
-    }
-    
-    nav ul{
-    list-style: none;
-    display: flex;
-    column-gap: 20px;
-    }
-    
-    nav ul li a{
-    color: rgb(197, 197, 197);
-    text-decoration: none;
-    transition: ease 0.5s;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    }
-    
-    nav ul li a:hover{
-    color: rgb(88, 88, 88);
-    
-    }
-    
-    .navbar img{
-    width: 8rem;
-    margin-left: 0%;
-    } 
-    
-    .container .row{
-    color: rgb(240, 240, 240);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    margin-top: 25%;
-    margin-left: 10%;
-    }
-    
-    .container .row h2{
-    font-size: 20px;
-    margin-left: 45px;
-    margin-top: 1%;
-    }
-    
-    .container .row h3{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-left: 3%;
-    margin-top: 5%;
-    }
-    
-    .container .row h4, h5{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-left: -25px;
-    }
-    
-    .container .row h6{
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 20px;
-    margin-top: 15%;
-    margin-left: 80px;
-    }
-    
-    .container .row div{
-    color: rgba(255, 255, 255, 0.884);
+section h4 {
     font-size: 25px;
-    margin-top: 5%;
-    margin-left: -30px;
-    }
-    
-    .navbar .dc{
-    color: rgba(255, 255, 255, 0.884);
-    font-size: 20px;
-    user-select: none;
-    margin-top: 3%;
-    font-family: 'Montserrat', sans-serif;
-    }
+    margin-top: -0px;
+}
+
+section .input {
+    color: #009473;
 }
